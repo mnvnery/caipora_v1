@@ -1,0 +1,48 @@
+<img class="header-img desktop" src="/assets/header.svg" alt="CAIPORA">
+<img class="header-img mobile" src="/assets/mobile-header.svg" alt="CAIPORA">
+
+
+<div class="map-grid">
+    <div class="venezuela-flex">
+        
+        <img class="locations" src="/assets/venezuela.webp" alt="guatemala">
+        <div class="dot-flex"><span class="dot dot-venezuela"></span><span class="dot-title dot-title-venezuela">GUATEMALA</span></div>
+    </div>
+    <div class="amazonia-flex">
+        <div class="dot-flex"><span class="dot dot-amazonia"></span><span class="dot-title dot-title-amazonia">AMAZÓNIA</span></div>
+        <div style="position: relative;">
+            <img class="locations" src="/assets/amazonia.webp" alt="amazonia">
+            
+        </div>
+    </div>
+    <canvas id='canvas' width=1920 height=800 style='position: absolute; top:0; left: 0'></canvas>
+</div>
+
+<script>
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d'),
+    brush = new Image();
+
+    brush.src = 'assets/brush.png'
+
+//prepare canvas
+ctx.fillStyle = '#F9E9D1'
+ctx.fillRect(0, 0, 1920, 800);
+
+//prepare a 30% opacity eraser
+ctx.globalCompositeOperation = 'destination-out';
+
+// make random strokes around cursor while mouse moves
+canvas.onmousemove = function(e) {
+    var rect = this.getBoundingClientRect();
+    var r = this.getBoundingClientRect(),
+    x = e.clientX - r.left,
+    y = e.clientY - r.top;
+
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.drawImage(brush, x, y);
+    
+
+}
+
+</script>

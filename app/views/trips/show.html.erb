@@ -1,0 +1,60 @@
+<main>
+<h1 class='text-center my-4'><%= l(@trip.start_date, format: "%d %B", locale: :pt) %> → <%= l(@trip.end_date, format: "%d %B", locale: :pt) %></h1>
+<% if @trip.name == 'Guatemala' %>
+    <div class="trip-map"><%= image_tag 'mapa-guatemala.svg', class: "map-img guatemala" %></div>
+    <h4 class="trip-route text-center mt-4 mb-5">ANTIGUA — SANTA MARÍA DE JESÚS — PACAYA — ATITLÁN — <br> FUENTES GEORGINA — PANAJACHEL — NEBAJ — SEMUC CHAMPEY <br>— PARQUE NACIONAL TIKAL — FLORES — COPAN RUINAS</h4>
+<% elsif @trip.name == 'Amazónia' %>
+    <div class="trip-map"><%= image_tag 'mapa_amazonia.svg', class: "map-img" %></div>
+    <h4 class="trip-route text-center mt-4 mb-5">MANAUS — TUMBIRA — IGAPÓ — PRAIA ALTA — <br> PRESIDENTE FIGUEIREDO — LAGOA AZUL — SALTO DO IPÊ</h4>
+<% end %>
+
+<div class="trip-info text-center">
+<% if @trip.name == 'Guatemala' %>
+    <div> 
+        <h4>DATAS DISPONÍVEIS</h4>
+        <h4>–</h4>
+        <h4>POR MARCAÇÃO</h4>
+        <h4>(TODO O ANO)</h4>
+    </div>
+<% elsif @trip.name == 'Amazónia' %>
+    <div> 
+        <h4>DATAS DISPONÍVEIS</h4>
+        <h4>–</h4>
+        <h4>25 JUN → 10 JUL 2021</h4>
+        <h4>5 SET → 25 SET 2021</h4>
+    </div>
+<% end %>
+    <div class="border-right border-dark"></div>
+    <div class=".d-none .d-sm-block border-bottom border-dark my-2"></div>
+    <div>
+        <h4>PREÇO</h4>
+        <h4>–</h4>
+        <h4><%= humanized_money_with_symbol(@trip.price) %> <% if @trip.name == 'Amazónia' %><h4></h4><% end %><strong>(VOO NÃO INCLUÍDO)</strong><h4>
+    <% if @trip.name == 'Guatemala' %>
+        <h5 class="mt-2">MÍNIMO DE 4 / MÁXIMO DE 14 PESSOAS</h5>
+    <% end %>
+    </div>
+    <div class="border-right border-dark"></div>
+    <div class=".d-none .d-sm-block border-bottom border-dark my-2"></div>
+    <div class='reserve-btn'>
+        <%= image_tag 'montanha.svg', class: "reserve-img" %>       
+        <h4 class="reserve-text">
+        CONTACTAR
+        </h4>
+    </div>
+</div>
+<div class="d-flex border-bottom border-dark mobile-flex-invert">
+    <div class="program dark-green border-right border-dark <%= "program-guatemala" if @trip.name == 'Guatemala' %>">
+        <h4 class="mb-3 mobile-title">PROGRAMA DIA A DIA</h4>
+        <% @trip.programs.order(:id).each do |program| %>
+            <div class="program-day"><%= program.day %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="program-summary"><%= program.summary %></span><i class="arrow-faq arrow-program ri-arrow-down-s-line"></i></div>
+            <div class="program-description"><%= program.description.html_safe %></div>
+        <% end %>
+    </div>
+    <div class=".d-none .d-sm-block border-bottom border-dark"></div>
+    <div class="description"><%= @trip.description %></div>
+</div>
+<%= render 'amazonia', trip: @trip if @trip.name == 'Amazónia' %>
+<%= render 'guatemala', trip: @trip if @trip.name == 'Guatemala' %>
+</main>
+

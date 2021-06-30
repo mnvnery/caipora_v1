@@ -1,0 +1,27 @@
+.presentation-flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 6vw;
+    padding-top: 2vh;
+}
+.presentation {
+    font-size: 1.4vw;
+    margin-right: 7.7vw;
+    line-height: 4vh;
+}
+
+.pres-img {
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .presentation-flex {
+        flex-direction: column;
+    }
+    .presentation {
+        margin-right: 0;
+        font-size: 4vw;
+        line-height: 2.5vh;
+        margin-bottom: 3vh;
+    }
+}

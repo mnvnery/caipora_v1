@@ -1,0 +1,91 @@
+
+body {
+    letter-spacing: 0.03em;
+    margin: 0;
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+}
+a:hover {
+    text-decoration: none;
+    color: black !important;
+}
+
+main {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 7vw;
+    flex: 1 0 auto;
+}
+//simple_form input for rich_text_area hight
+trix-editor.form-control {
+    height: auto;
+}
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+body {
+    background-color: $ocre;
+}
+h1 {
+    font-family: "HKGrotesk-Bold";
+    font-size: 1.9vw;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+}
+
+
+h4 {
+    font-family: "HKGrotesk-Bold";
+    font-size: 1.1vw;
+    letter-spacing: 0.1vw;
+
+}
+
+h5 {
+    font-family: "HKGrotesk-Bold";
+    font-size: 0.9vw;
+    letter-spacing: 0.1vw;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin-left: 11vw;
+        margin-top: 10vw;
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 4.2vw;
+        letter-spacing: 0.3vw;
+    }
+
+    h4 {
+        font-size: 2.5vw;
+    }
+
+    h5 {
+        font-size: 2vw;
+    }
+}

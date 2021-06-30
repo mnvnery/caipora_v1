@@ -1,0 +1,262 @@
+
+
+.trip-info {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.field {
+    width: 2vw;
+    height: 2vw;
+    border-radius: none;
+    border: solid 1px black;
+}
+
+.selector {
+    width: 2vw;
+    height: 2vw;
+    background-color: $dark-green;
+    border: solid 1px black;
+}
+
+.trip-map {
+    display: flex;
+    justify-content: center;
+}
+
+.map-img {
+    width: 55vw;
+    height: 100%;
+}
+
+.guatemala {
+    width: 35vw;
+}
+
+.reserve-btn {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    margin-top: 4vh;
+}
+.reserve-img {
+    width: 20vw;
+}
+.reserve-text {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.program {
+    background-color: $dark-green;
+    width: 40vw;
+    padding: 5vh 3vw;
+    height: 200vh;
+    overflow: scroll;
+}
+
+.program-guatemala {
+    height: 120vh;
+}
+.program-day{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 1vw;
+    margin-bottom: 0.5vh;
+}
+.program-description{
+    font-size: 1.05vw;
+    margin-bottom: 2.5vh;
+}
+.description {
+    width: 70vw;
+    padding: 6vh 4vw;
+    font-size: 1.5vw;
+    line-height: 4.5vh;
+}
+
+.context {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    width: 65%;
+}
+
+.to-measure {
+    height: 30vh;
+    background-color: $dark-green;
+    margin: auto;
+    padding: 4vh 5vw;
+    width: 35%;
+}
+
+.faq-question {
+    font-size: 1.6vw;
+    padding: 2vh 2vw;
+}
+
+.faq-answer {
+    padding: 2vh 2vw;
+    display: none;
+}
+
+.arrow-faq {
+    float: right;
+}
+
+.faq {
+    width: 65%;
+}
+
+.includes {
+    width: 35%;
+    padding: 5vh 3vw;
+}
+
+.includes-location {
+    font-size: 0.95vw;
+}
+.includes-tag {
+    font-size: 0.8vw;
+    font-weight: bold;
+    margin-left: 1vw;
+}
+.includes-description {
+    font-size: 1.05vw;
+}
+
+.carousel-inner img {
+    margin: 10vh auto;
+    width: 90%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hide-guatemala {
+    display: none;
+}
+
+.btn-override{
+    background-color: transparent;
+    border: none;
+}
+.btn-override:hover {
+    text-decoration: underline;
+}
+
+.carousel-control-next-icon {
+    background-image: url("/assets/right.svg") ;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("/assets/left.svg") ;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 3vw;
+    height: 3vw;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    opacity: 1;
+}
+@media only screen and (min-width: 600px) {
+    .program-summary {
+        display: none;
+    }
+    .arrow-program {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .map-img{
+        width: 75vw;
+    }
+    .trip-info {
+        flex-direction: column;
+    }
+
+    .reserve-img {
+        width: 65vw;
+    }
+    .reserve-btn {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .mobile-flex-invert {
+        flex-direction: column-reverse;
+    }
+    .description {
+        width: 100%;
+        font-size: 4vw;
+        line-height: 3vh;
+        padding: 3vh 4vw;
+    }
+    .program {
+        width: 100%;
+        border-right: none !important;
+        height: 100%;
+    }
+    .program-day{
+        font-size: 3vw;
+        margin-bottom: 0.7vh;
+    }
+    .program-description {
+        font-size: 3.5vw;
+        display: none;
+    }
+    .mobile-title {
+        font-size: 4.2vw;
+    }
+    .to-measure {
+        width: 100%;
+        border: none !important;
+    }
+    .context {
+        height: 100%;
+        width: 100%;
+    }
+    .context img {
+        width: 100%;
+        padding: 3vh 0 ;
+    }
+    .mobile-flex-column {
+        flex-direction: column;
+    }
+    .faq {
+        width: 100%;
+    }
+    .faq-question {
+        font-size: 4vw;
+    }
+    .includes {
+        width: 100%;
+        border: none !important;
+        padding: 5vh 3vw 0 3vw;
+    }
+
+    .includes-tag,.includes-location {
+        font-size: 3.5vw;
+    }
+    .includes-description {
+        font-size: 4vw;
+    }
+    .carousel-inner img {
+        height: 25vh;
+        margin: 4vh auto;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 5vw;
+        height: 5vw;
+    }
+}
