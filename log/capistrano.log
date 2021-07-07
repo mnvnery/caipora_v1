@@ -2534,3 +2534,38 @@ Caused by:
 /home/deploy/.rbenv/versions/2.7.0/bin/bundle:23:in `<main>'
  DEBUG [32bf21de] 	Tasks: TOP => db:migrate
  DEBUG [32bf21de] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 15:36:32 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a0eb29a0] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [a0eb29a0] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [a0eb29a0] Finished in 1.413 seconds with exit status 0 (successful).
+ DEBUG [b05fdc22] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [b05fdc22] Command: /usr/bin/env which passenger
+ DEBUG [b05fdc22] 	/usr/bin/passenger
+ DEBUG [b05fdc22] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [eac07f9a] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [eac07f9a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [eac07f9a] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-8a207571d7edec5d7f97.sh 0.0%
+  INFO Uploading /tmp/git-ssh-8a207571d7edec5d7f97.sh 100.0%
+  INFO [1999fe82] Running /usr/bin/env chmod 700 /tmp/git-ssh-8a207571d7edec5d7f97.sh as deploy@178.62.241.126
+ DEBUG [1999fe82] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-8a207571d7edec5d7f97.sh )
+  INFO [1999fe82] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [6a90871f] Running /usr/bin/env git ls-remote git@github.com:mnvnery/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [6a90871f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8a207571d7edec5d7f97.sh" ; /usr/bin/env git ls-remote git@github.com:mnvnery/caipora_v1.git HEAD )
+ DEBUG [6a90871f] 	081ff4b177cdb618fe456cccf6e11f8fbd0db7ad	HEAD
+  INFO [6a90871f] Finished in 1.267 seconds with exit status 0 (successful).
+  INFO [7f479aa7] Running /usr/bin/env mkdir -p /home/deploy/caipora_nores/shared /home/deploy/caipora_nores/releases as deploy@178.62.241.126
+ DEBUG [7f479aa7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /home/deploy/caipora_nores/shared /home/deploy/caipora_nores/releases )
+  INFO [7f479aa7] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [d2ffe535] Running /usr/bin/env mkdir -p /home/deploy/caipora_nores/shared/log /home/deploy/caipora_nores/shared/tmp/pids /home/deploy/caipora_nores/shared/tmp/cache /home/deploy/caipora_nores/shared/tmp/sockets /home/deploy/caipora_nores/shared/vendor/bundle /home/deploy/caipora_nores/shared/.bundle /home/deploy/caipora_nores/shared/public/system /home/deploy/caipora_nores/shared/public/uploads /home/deploy/caipora_nores/shared/public/packs /home/deploy/caipora_nores/shared/node_modules /home/deploy/caipora_nores/shared/public/assets as deploy@178.62.241.126
+ DEBUG [d2ffe535] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /home/deploy/caipora_nores/shared/log /home/deploy/caipora_nores/shared/tmp/pids /home/deploy/caipora_nores/shared/tmp/cache /home/deploy/caipora_nores/shared/tmp/sockets /home/deploy/caipora_nores/shared/vendor/bundle /home/deploy/caipora_nores/shared/.bundle /home/deploy/caipora_nores/shared/public/system /home/deploy/caipora_nores/shared/public/uploads /home/deploy/caipora_nores/shared/public/packs /home/deploy/caipora_nores/shared/node_modules /home/deploy/caipora_nores/shared/public/assets )
+  INFO [d2ffe535] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [e1871526] Running /usr/bin/env mkdir -p /home/deploy/caipora_nores/shared/config as deploy@178.62.241.126
+ DEBUG [e1871526] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /home/deploy/caipora_nores/shared/config )
+  INFO [e1871526] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [3cfd8cad] Running [ -f /home/deploy/caipora_nores/shared/config/database.yml ] as deploy@178.62.241.126
+ DEBUG [3cfd8cad] Command: [ -f /home/deploy/caipora_nores/shared/config/database.yml ]
+ DEBUG [3cfd8cad] Finished in 0.050 seconds with exit status 1 (failed).
+ ERROR linked file /home/deploy/caipora_nores/shared/config/database.yml does not exist on 178.62.241.126
