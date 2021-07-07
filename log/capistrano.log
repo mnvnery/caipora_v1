@@ -2238,3 +2238,299 @@ Caused by:
 /home/deploy/.rbenv/versions/2.7.0/bin/bundle:23:in `<main>'
  DEBUG [ee790583] 	Tasks: TOP => db:migrate
  DEBUG [ee790583] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 15:22:38 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b2a8da2b] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [b2a8da2b] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [b2a8da2b] Finished in 1.551 seconds with exit status 0 (successful).
+ DEBUG [44db2314] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [44db2314] Command: /usr/bin/env which passenger
+ DEBUG [44db2314] 	/usr/bin/passenger
+ DEBUG [44db2314] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [d9ec3fe3] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [d9ec3fe3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [d9ec3fe3] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-94d32c1cc6c843acd7f8.sh 0.0%
+  INFO Uploading /tmp/git-ssh-94d32c1cc6c843acd7f8.sh 100.0%
+  INFO [01a36f9f] Running /usr/bin/env chmod 700 /tmp/git-ssh-94d32c1cc6c843acd7f8.sh as deploy@178.62.241.126
+ DEBUG [01a36f9f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-94d32c1cc6c843acd7f8.sh )
+  INFO [01a36f9f] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [1c4a00e2] Running /usr/bin/env git ls-remote git@github.com:mnvnery/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [1c4a00e2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-94d32c1cc6c843acd7f8.sh" ; /usr/bin/env git ls-remote git@github.com:mnvnery/caipora_v1.git HEAD )
+ DEBUG [1c4a00e2] 	9ad22e4cc6e5074ec008b79709bdf4856c0c510c	HEAD
+  INFO [1c4a00e2] Finished in 1.311 seconds with exit status 0 (successful).
+  INFO [a5eb93bc] Running /usr/bin/env mkdir -p /home/deploy/caipora_nores/shared /home/deploy/caipora_nores/releases as deploy@178.62.241.126
+ DEBUG [a5eb93bc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /home/deploy/caipora_nores/shared /home/deploy/caipora_nores/releases )
+  INFO [a5eb93bc] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [c4303121] Running /usr/bin/env mkdir -p /home/deploy/caipora_nores/shared/log /home/deploy/caipora_nores/shared/tmp/pids /home/deploy/caipora_nores/shared/tmp/cache /home/deploy/caipora_nores/shared/tmp/sockets /home/deploy/caipora_nores/shared/vendor/bundle /home/deploy/caipora_nores/shared/.bundle /home/deploy/caipora_nores/shared/public/system /home/deploy/caipora_nores/shared/public/uploads /home/deploy/caipora_nores/shared/public/packs /home/deploy/caipora_nores/shared/node_modules /home/deploy/caipora_nores/shared/public/assets as deploy@178.62.241.126
+ DEBUG [c4303121] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /home/deploy/caipora_nores/shared/log /home/deploy/caipora_nores/shared/tmp/pids /home/deploy/caipora_nores/shared/tmp/cache /home/deploy/caipora_nores/shared/tmp/sockets /home/deploy/caipora_nores/shared/vendor/bundle /home/deploy/caipora_nores/shared/.bundle /home/deploy/caipora_nores/shared/public/system /home/deploy/caipora_nores/shared/public/uploads /home/deploy/caipora_nores/shared/public/packs /home/deploy/caipora_nores/shared/node_modules /home/deploy/caipora_nores/shared/public/assets )
+  INFO [c4303121] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [b0944b1b] Running [ -f /home/deploy/caipora_nores/current/REVISION ] as deploy@178.62.241.126
+ DEBUG [b0944b1b] Command: [ -f /home/deploy/caipora_nores/current/REVISION ]
+ DEBUG [b0944b1b] Finished in 0.095 seconds with exit status 1 (failed).
+ DEBUG [e6440730] Running [ -f /home/deploy/caipora_nores/repo/HEAD ] as deploy@178.62.241.126
+ DEBUG [e6440730] Command: [ -f /home/deploy/caipora_nores/repo/HEAD ]
+ DEBUG [e6440730] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/caipora_nores/repo
+ DEBUG [c3e4d1bf] Running if test ! -d /home/deploy/caipora_nores/repo; then echo "Directory does not exist '/home/deploy/caipora_nores/repo'" 1>&2; false; fi as deploy@178.62.241.126
+ DEBUG [c3e4d1bf] Command: if test ! -d /home/deploy/caipora_nores/repo; then echo "Directory does not exist '/home/deploy/caipora_nores/repo'" 1>&2; false; fi
+ DEBUG [c3e4d1bf] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [a89fdbb7] Running /usr/bin/env git remote set-url origin git@github.com:mnvnery/caipora_v1.git as deploy@178.62.241.126
+ DEBUG [a89fdbb7] Command: cd /home/deploy/caipora_nores/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-94d32c1cc6c843acd7f8.sh" ; /usr/bin/env git remote set-url origin git@github.com:mnvnery/caipora_v1.git )
+  INFO [a89fdbb7] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [fb0f8b3e] Running /usr/bin/env git remote update --prune as deploy@178.62.241.126
+ DEBUG [fb0f8b3e] Command: cd /home/deploy/caipora_nores/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-94d32c1cc6c843acd7f8.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [fb0f8b3e] 	Fetching origin
+ DEBUG [fb0f8b3e] 	From github.com:mnvnery/caipora_v1
+   fa70d076..51310a93  deploy           -> deploy
+   c0a6e597..9ad22e4c  master           -> master
+ * [new ref]           refs/pull/5/head -> refs/pull/5/head
+ * [new ref]           refs/pull/6/head -> refs/pull/6/head
+  INFO [fb0f8b3e] Finished in 2.993 seconds with exit status 0 (successful).
+ DEBUG [ebf6af52] Running if test ! -d /home/deploy/caipora_nores/repo; then echo "Directory does not exist '/home/deploy/caipora_nores/repo'" 1>&2; false; fi as deploy@178.62.241.126
+ DEBUG [ebf6af52] Command: if test ! -d /home/deploy/caipora_nores/repo; then echo "Directory does not exist '/home/deploy/caipora_nores/repo'" 1>&2; false; fi
+ DEBUG [ebf6af52] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [b9559618] Running /usr/bin/env mkdir -p /home/deploy/caipora_nores/releases/20210707142242 as deploy@178.62.241.126
+ DEBUG [b9559618] Command: cd /home/deploy/caipora_nores/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-94d32c1cc6c843acd7f8.sh" ; /usr/bin/env mkdir -p /home/deploy/caipora_nores/releases/20210707142242 )
+  INFO [b9559618] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [1512e7b8] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/caipora_nores/releases/20210707142242 as deploy@178.62.241.126
+ DEBUG [1512e7b8] Command: cd /home/deploy/caipora_nores/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-94d32c1cc6c843acd7f8.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/caipora_nores/releases/20210707142242 )
+  INFO [1512e7b8] Finished in 5.766 seconds with exit status 0 (successful).
+ DEBUG [68e5be90] Running if test ! -d /home/deploy/caipora_nores/repo; then echo "Directory does not exist '/home/deploy/caipora_nores/repo'" 1>&2; false; fi as deploy@178.62.241.126
+ DEBUG [68e5be90] Command: if test ! -d /home/deploy/caipora_nores/repo; then echo "Directory does not exist '/home/deploy/caipora_nores/repo'" 1>&2; false; fi
+ DEBUG [68e5be90] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [06066571] Running /usr/bin/env git rev-list --max-count=1 master as deploy@178.62.241.126
+ DEBUG [06066571] Command: cd /home/deploy/caipora_nores/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-94d32c1cc6c843acd7f8.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [06066571] 	9ad22e4cc6e5074ec008b79709bdf4856c0c510c
+ DEBUG [06066571] Finished in 0.113 seconds with exit status 0 (successful).
+ DEBUG [c58a1e0a] Running if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi as deploy@178.62.241.126
+ DEBUG [c58a1e0a] Command: if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi
+ DEBUG [c58a1e0a] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [79aca443] Running /usr/bin/env echo "9ad22e4cc6e5074ec008b79709bdf4856c0c510c" > REVISION as deploy@178.62.241.126
+ DEBUG [79aca443] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env echo "9ad22e4cc6e5074ec008b79709bdf4856c0c510c" > REVISION )
+  INFO [79aca443] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [9a969f15] Running /usr/bin/env mkdir -p /home/deploy/caipora_nores/releases/20210707142242 /home/deploy/caipora_nores/releases/20210707142242/tmp /home/deploy/caipora_nores/releases/20210707142242/vendor /home/deploy/caipora_nores/releases/20210707142242/public as deploy@178.62.241.126
+ DEBUG [9a969f15] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /home/deploy/caipora_nores/releases/20210707142242 /home/deploy/caipora_nores/releases/20210707142242/tmp /home/deploy/caipora_nores/releases/20210707142242/vendor /home/deploy/caipora_nores/releases/20210707142242/public )
+  INFO [9a969f15] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [8a228b99] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/log ] as deploy@178.62.241.126
+ DEBUG [8a228b99] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/log ]
+ DEBUG [8a228b99] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [e130a134] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/log ] as deploy@178.62.241.126
+ DEBUG [e130a134] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/log ]
+ DEBUG [e130a134] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [3ab53fb4] Running /usr/bin/env rm -rf /home/deploy/caipora_nores/releases/20210707142242/log as deploy@178.62.241.126
+ DEBUG [3ab53fb4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env rm -rf /home/deploy/caipora_nores/releases/20210707142242/log )
+  INFO [3ab53fb4] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [c7f5f70c] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/log /home/deploy/caipora_nores/releases/20210707142242/log as deploy@178.62.241.126
+ DEBUG [c7f5f70c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/log /home/deploy/caipora_nores/releases/20210707142242/log )
+  INFO [c7f5f70c] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [9531768c] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/tmp/pids ] as deploy@178.62.241.126
+ DEBUG [9531768c] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/tmp/pids ]
+ DEBUG [9531768c] Finished in 0.095 seconds with exit status 1 (failed).
+ DEBUG [f57f2577] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/tmp/pids ] as deploy@178.62.241.126
+ DEBUG [f57f2577] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/tmp/pids ]
+ DEBUG [f57f2577] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [af46a0f8] Running /usr/bin/env rm -rf /home/deploy/caipora_nores/releases/20210707142242/tmp/pids as deploy@178.62.241.126
+ DEBUG [af46a0f8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env rm -rf /home/deploy/caipora_nores/releases/20210707142242/tmp/pids )
+  INFO [af46a0f8] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [59e1a5fb] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/tmp/pids /home/deploy/caipora_nores/releases/20210707142242/tmp/pids as deploy@178.62.241.126
+ DEBUG [59e1a5fb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/tmp/pids /home/deploy/caipora_nores/releases/20210707142242/tmp/pids )
+  INFO [59e1a5fb] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [92580c77] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/tmp/cache ] as deploy@178.62.241.126
+ DEBUG [92580c77] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/tmp/cache ]
+ DEBUG [92580c77] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [408d1a0f] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/tmp/cache ] as deploy@178.62.241.126
+ DEBUG [408d1a0f] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/tmp/cache ]
+ DEBUG [408d1a0f] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [6b03b831] Running /usr/bin/env rm -rf /home/deploy/caipora_nores/releases/20210707142242/tmp/cache as deploy@178.62.241.126
+ DEBUG [6b03b831] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env rm -rf /home/deploy/caipora_nores/releases/20210707142242/tmp/cache )
+  INFO [6b03b831] Finished in 0.394 seconds with exit status 0 (successful).
+  INFO [4e262d85] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/tmp/cache /home/deploy/caipora_nores/releases/20210707142242/tmp/cache as deploy@178.62.241.126
+ DEBUG [4e262d85] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/tmp/cache /home/deploy/caipora_nores/releases/20210707142242/tmp/cache )
+  INFO [4e262d85] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [15940e11] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/tmp/sockets ] as deploy@178.62.241.126
+ DEBUG [15940e11] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/tmp/sockets ]
+ DEBUG [15940e11] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [0dd2235b] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/tmp/sockets ] as deploy@178.62.241.126
+ DEBUG [0dd2235b] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/tmp/sockets ]
+ DEBUG [0dd2235b] Finished in 0.053 seconds with exit status 1 (failed).
+  INFO [87db6168] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/tmp/sockets /home/deploy/caipora_nores/releases/20210707142242/tmp/sockets as deploy@178.62.241.126
+ DEBUG [87db6168] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/tmp/sockets /home/deploy/caipora_nores/releases/20210707142242/tmp/sockets )
+  INFO [87db6168] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [4a928e68] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/vendor/bundle ] as deploy@178.62.241.126
+ DEBUG [4a928e68] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/vendor/bundle ]
+ DEBUG [4a928e68] Finished in 0.054 seconds with exit status 1 (failed).
+ DEBUG [7c64abf7] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/vendor/bundle ] as deploy@178.62.241.126
+ DEBUG [7c64abf7] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/vendor/bundle ]
+ DEBUG [7c64abf7] Finished in 0.083 seconds with exit status 1 (failed).
+  INFO [d2900e44] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/vendor/bundle /home/deploy/caipora_nores/releases/20210707142242/vendor/bundle as deploy@178.62.241.126
+ DEBUG [d2900e44] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/vendor/bundle /home/deploy/caipora_nores/releases/20210707142242/vendor/bundle )
+  INFO [d2900e44] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [b9627481] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/.bundle ] as deploy@178.62.241.126
+ DEBUG [b9627481] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/.bundle ]
+ DEBUG [b9627481] Finished in 0.094 seconds with exit status 1 (failed).
+ DEBUG [2c8bcfba] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/.bundle ] as deploy@178.62.241.126
+ DEBUG [2c8bcfba] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/.bundle ]
+ DEBUG [2c8bcfba] Finished in 0.039 seconds with exit status 1 (failed).
+  INFO [f482c501] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/.bundle /home/deploy/caipora_nores/releases/20210707142242/.bundle as deploy@178.62.241.126
+ DEBUG [f482c501] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/.bundle /home/deploy/caipora_nores/releases/20210707142242/.bundle )
+  INFO [f482c501] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [edf971af] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/public/system ] as deploy@178.62.241.126
+ DEBUG [edf971af] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/public/system ]
+ DEBUG [edf971af] Finished in 0.059 seconds with exit status 1 (failed).
+ DEBUG [d18a564d] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/public/system ] as deploy@178.62.241.126
+ DEBUG [d18a564d] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/public/system ]
+ DEBUG [d18a564d] Finished in 0.094 seconds with exit status 1 (failed).
+  INFO [7c7d0ec1] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/public/system /home/deploy/caipora_nores/releases/20210707142242/public/system as deploy@178.62.241.126
+ DEBUG [7c7d0ec1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/public/system /home/deploy/caipora_nores/releases/20210707142242/public/system )
+  INFO [7c7d0ec1] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [7fc5a39e] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/public/uploads ] as deploy@178.62.241.126
+ DEBUG [7fc5a39e] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/public/uploads ]
+ DEBUG [7fc5a39e] Finished in 0.081 seconds with exit status 1 (failed).
+ DEBUG [363d91e2] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/public/uploads ] as deploy@178.62.241.126
+ DEBUG [363d91e2] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/public/uploads ]
+ DEBUG [363d91e2] Finished in 0.054 seconds with exit status 1 (failed).
+  INFO [120138bb] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/public/uploads /home/deploy/caipora_nores/releases/20210707142242/public/uploads as deploy@178.62.241.126
+ DEBUG [120138bb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/public/uploads /home/deploy/caipora_nores/releases/20210707142242/public/uploads )
+  INFO [120138bb] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [8dbc9e87] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/public/packs ] as deploy@178.62.241.126
+ DEBUG [8dbc9e87] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/public/packs ]
+ DEBUG [8dbc9e87] Finished in 0.055 seconds with exit status 1 (failed).
+ DEBUG [85bfed25] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/public/packs ] as deploy@178.62.241.126
+ DEBUG [85bfed25] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/public/packs ]
+ DEBUG [85bfed25] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [a5998c87] Running /usr/bin/env rm -rf /home/deploy/caipora_nores/releases/20210707142242/public/packs as deploy@178.62.241.126
+ DEBUG [a5998c87] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env rm -rf /home/deploy/caipora_nores/releases/20210707142242/public/packs )
+  INFO [a5998c87] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [b9a20bd8] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/public/packs /home/deploy/caipora_nores/releases/20210707142242/public/packs as deploy@178.62.241.126
+ DEBUG [b9a20bd8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/public/packs /home/deploy/caipora_nores/releases/20210707142242/public/packs )
+  INFO [b9a20bd8] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [4e0edc90] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/node_modules ] as deploy@178.62.241.126
+ DEBUG [4e0edc90] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/node_modules ]
+ DEBUG [4e0edc90] Finished in 0.055 seconds with exit status 1 (failed).
+ DEBUG [847ed011] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/node_modules ] as deploy@178.62.241.126
+ DEBUG [847ed011] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/node_modules ]
+ DEBUG [847ed011] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [81b6d9b7] Running /usr/bin/env rm -rf /home/deploy/caipora_nores/releases/20210707142242/node_modules as deploy@178.62.241.126
+ DEBUG [81b6d9b7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env rm -rf /home/deploy/caipora_nores/releases/20210707142242/node_modules )
+  INFO [81b6d9b7] Finished in 0.554 seconds with exit status 0 (successful).
+  INFO [5bfb81a9] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/node_modules /home/deploy/caipora_nores/releases/20210707142242/node_modules as deploy@178.62.241.126
+ DEBUG [5bfb81a9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/node_modules /home/deploy/caipora_nores/releases/20210707142242/node_modules )
+  INFO [5bfb81a9] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [f8f5657c] Running [ -L /home/deploy/caipora_nores/releases/20210707142242/public/assets ] as deploy@178.62.241.126
+ DEBUG [f8f5657c] Command: [ -L /home/deploy/caipora_nores/releases/20210707142242/public/assets ]
+ DEBUG [f8f5657c] Finished in 0.055 seconds with exit status 1 (failed).
+ DEBUG [54473c22] Running [ -d /home/deploy/caipora_nores/releases/20210707142242/public/assets ] as deploy@178.62.241.126
+ DEBUG [54473c22] Command: [ -d /home/deploy/caipora_nores/releases/20210707142242/public/assets ]
+ DEBUG [54473c22] Finished in 0.095 seconds with exit status 1 (failed).
+  INFO [997f64d5] Running /usr/bin/env ln -s /home/deploy/caipora_nores/shared/public/assets /home/deploy/caipora_nores/releases/20210707142242/public/assets as deploy@178.62.241.126
+ DEBUG [997f64d5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ln -s /home/deploy/caipora_nores/shared/public/assets /home/deploy/caipora_nores/releases/20210707142242/public/assets )
+  INFO [997f64d5] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [d7795ea7] Running if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi as deploy@178.62.241.126
+ DEBUG [d7795ea7] Command: if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi
+ DEBUG [d7795ea7] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO [9f745f17] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@178.62.241.126
+ DEBUG [9f745f17] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [9f745f17] Finished in 0.640 seconds with exit status 0 (successful).
+  INFO [2b179502] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/caipora_nores/shared/bundle as deploy@178.62.241.126
+ DEBUG [2b179502] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/caipora_nores/shared/bundle )
+  INFO [2b179502] Finished in 0.551 seconds with exit status 0 (successful).
+  INFO [50a714cd] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as deploy@178.62.241.126
+ DEBUG [50a714cd] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [50a714cd] Finished in 0.511 seconds with exit status 0 (successful).
+ DEBUG [f9061cee] Running if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi as deploy@178.62.241.126
+ DEBUG [f9061cee] Command: if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi
+ DEBUG [f9061cee] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [9f957c6f] Running $HOME/.rbenv/bin/rbenv exec bundle check as deploy@178.62.241.126
+ DEBUG [9f957c6f] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [9f957c6f] 	The Gemfile's dependencies are satisfied
+ DEBUG [9f957c6f] Finished in 0.722 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [85b0f732] Running if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi as deploy@178.62.241.126
+ DEBUG [85b0f732] Command: if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi
+ DEBUG [85b0f732] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [56483af1] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@178.62.241.126
+ DEBUG [56483af1] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [56483af1] 	yarn install v1.22.5
+ DEBUG [56483af1] 	[1/4] Resolving packages...
+ DEBUG [56483af1] 	success Already up-to-date.
+ DEBUG [56483af1] 	Done in 1.17s.
+ DEBUG [56483af1] 	Everything's up-to-date. Nothing to do
+  INFO [56483af1] Finished in 14.086 seconds with exit status 0 (successful).
+ DEBUG [aaff1d11] Running if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi as deploy@178.62.241.126
+ DEBUG [aaff1d11] Command: if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi
+ DEBUG [aaff1d11] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [29330f50] Running /usr/bin/env mkdir -p /home/deploy/caipora_nores/releases/20210707142242/assets_manifest_backup as deploy@178.62.241.126
+ DEBUG [29330f50] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /home/deploy/caipora_nores/releases/20210707142242/assets_manifest_backup )
+  INFO [29330f50] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [cca1db8c] Running /usr/bin/env ls /home/deploy/caipora_nores/releases/20210707142242/public/assets/.sprockets-manifest* as deploy@178.62.241.126
+ DEBUG [cca1db8c] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ls /home/deploy/caipora_nores/releases/20210707142242/public/assets/.sprockets-manifest* )
+ DEBUG [cca1db8c] 	/home/deploy/caipora_nores/releases/20210707142242/public/assets/.sprockets-manifest-61d30e3e03d55efb46b63cf7e961c3ff.json
+ DEBUG [cca1db8c] Finished in 0.110 seconds with exit status 0 (successful).
+ DEBUG [28f8d1bf] Running /usr/bin/env ls /home/deploy/caipora_nores/releases/20210707142242/public/assets/.sprockets-manifest* as deploy@178.62.241.126
+ DEBUG [28f8d1bf] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env ls /home/deploy/caipora_nores/releases/20210707142242/public/assets/.sprockets-manifest* )
+ DEBUG [28f8d1bf] 	/home/deploy/caipora_nores/releases/20210707142242/public/assets/.sprockets-manifest-61d30e3e03d55efb46b63cf7e961c3ff.json
+ DEBUG [28f8d1bf] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [a1dd4cd0] Running /usr/bin/env cp /home/deploy/caipora_nores/releases/20210707142242/public/assets/.sprockets-manifest-61d30e3e03d55efb46b63cf7e961c3ff.json /home/deploy/caipora_nores/releases/20210707142242/assets_manifest_backup as deploy@178.62.241.126
+ DEBUG [a1dd4cd0] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env cp /home/deploy/caipora_nores/releases/20210707142242/public/assets/.sprockets-manifest-61d30e3e03d55efb46b63cf7e961c3ff.json /home/deploy/caipora_nores/releases/20210707142242/assets_manifest_backup )
+  INFO [a1dd4cd0] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [8e651c8b] Running if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi as deploy@178.62.241.126
+ DEBUG [8e651c8b] Command: if test ! -d /home/deploy/caipora_nores/releases/20210707142242; then echo "Directory does not exist '/home/deploy/caipora_nores/releases/20210707142242'" 1>&2; false; fi
+ DEBUG [8e651c8b] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO [32bf21de] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@178.62.241.126
+ DEBUG [32bf21de] Command: cd /home/deploy/caipora_nores/releases/20210707142242 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+ DEBUG [32bf21de] 	rake aborted!
+ DEBUG [32bf21de] 	ActiveRecord::ConnectionNotEstablished: could not connect to server: Connection refused
+	Is the server running on host "178.62.241.126" and accepting
+	TCP/IP connections on port 5432?
+ DEBUG [32bf21de] 	/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_handling.rb:283:in `connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/tasks/database_tasks.rb:237:in `migrate'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/railties/databases.rake:92:in `block (3 levels) in <main>'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/railties/databases.rake:90:in `each'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/railties/databases.rake:90:in `block (2 levels) in <main>'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/deploy/.rbenv/versions/2.7.0/bin/bundle:23:in `load'
+/home/deploy/.rbenv/versions/2.7.0/bin/bundle:23:in `<main>'
+ DEBUG [32bf21de] 	
+Caused by:
+ DEBUG [32bf21de] 	PG::ConnectionBad: could not connect to server: Connection refused
+	Is the server running on host "178.62.241.126" and accepting
+	TCP/IP connections on port 5432?
+ DEBUG [32bf21de] 	/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/pg-1.2.3/lib/pg.rb:58:in `initialize'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/pg-1.2.3/lib/pg.rb:58:in `new'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/pg-1.2.3/lib/pg.rb:58:in `connect'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/postgresql_adapter.rb:78:in `new_client'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/connection_handling.rb:283:in `connection'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/tasks/database_tasks.rb:237:in `migrate'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/railties/databases.rake:92:in `block (3 levels) in <main>'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/railties/databases.rake:90:in `each'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/activerecord-6.1.3.2/lib/active_record/railties/databases.rake:90:in `block (2 levels) in <main>'
+/home/deploy/caipora_nores/shared/bundle/ruby/2.7.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/deploy/.rbenv/versions/2.7.0/bin/bundle:23:in `load'
+/home/deploy/.rbenv/versions/2.7.0/bin/bundle:23:in `<main>'
+ DEBUG [32bf21de] 	Tasks: TOP => db:migrate
+ DEBUG [32bf21de] 	(See full trace by running task with --trace)
