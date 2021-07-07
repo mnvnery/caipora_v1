@@ -71,6 +71,7 @@ GEM
     autoprefixer-rails (10.2.5.0)
       execjs (< 2.8.0)
     bcrypt (3.1.16)
+    bcrypt_pbkdf (1.1.0)
     bindata (2.4.10)
     bindex (0.8.1)
     bootsnap (1.7.5)
@@ -114,6 +115,7 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
+    ed25519 (1.2.4)
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.15.0)
@@ -345,6 +347,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails (= 10.2.5)
+  bcrypt_pbkdf (>= 1.0, < 2.0)
   bootsnap (>= 1.4.4)
   byebug
   capistrano (~> 3.11)
@@ -354,11 +357,13 @@ DEPENDENCIES
   capybara (>= 3.26)
   devise
   dotenv-rails
+  ed25519 (>= 1.2, < 2.0)
   font-awesome-sass
   forest_liana
   jbuilder (~> 2.7)
   listen (~> 3.3)
   money-rails
+  net-ssh (>= 6.0.2)
   pg (~> 1.1)
   pry-byebug
   pry-rails
