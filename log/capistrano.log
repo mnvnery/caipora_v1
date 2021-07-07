@@ -1,0 +1,75 @@
+# Logfile created on 2021-07-06 18:20:20 +0100 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-06 18:20:20 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3bfc64fd] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [3bfc64fd] Command: /usr/bin/env which passenger
+ DEBUG [3bfc64fd] 	/usr/bin/passenger
+ DEBUG [3bfc64fd] 	
+ DEBUG [3bfc64fd] Finished in 1.521 seconds with exit status 0 (successful).
+ DEBUG [7186cc9e] Running ~/.rvm/bin/rvm version as deploy@178.62.241.126
+ DEBUG [7186cc9e] Command: ~/.rvm/bin/rvm version
+ DEBUG [7186cc9e] 	bash: /home/deploy/.rvm/bin/rvm: No such file or directory
+ DEBUG [7186cc9e] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-06 18:26:09 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d9ab23e2] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [d9ab23e2] Command: /usr/bin/env which passenger
+ DEBUG [d9ab23e2] 	/usr/bin/passenger
+ DEBUG [d9ab23e2] Finished in 1.434 seconds with exit status 0 (successful).
+ DEBUG [848c0e57] Running [ -d ~/.rvm ] as deploy@178.62.241.126
+ DEBUG [848c0e57] Command: [ -d ~/.rvm ]
+ DEBUG [848c0e57] Finished in 0.189 seconds with exit status 1 (failed).
+ DEBUG [90a34ca2] Running [ -d /usr/local/rvm ] as deploy@178.62.241.126
+ DEBUG [90a34ca2] Command: [ -d /usr/local/rvm ]
+ DEBUG [90a34ca2] Finished in 0.230 seconds with exit status 1 (failed).
+ DEBUG [2cbc0353] Running ~/.rvm/bin/rvm version as deploy@178.62.241.126
+ DEBUG [2cbc0353] Command: ~/.rvm/bin/rvm version
+ DEBUG [2cbc0353] 	bash: /home/deploy/.rvm/bin/rvm: No such file or directory
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-06 18:29:02 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [6828fb2d] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@178.62.241.126
+ DEBUG [6828fb2d] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+ DEBUG [6828fb2d] Finished in 2.057 seconds with exit status 1 (failed).
+  WARN rbenv: 3.0.1 is not installed or not found in $HOME/.rbenv/versions/3.0.1 on 178.62.241.126
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-06 18:29:23 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [7bf1f6a0] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@178.62.241.126
+ DEBUG [7bf1f6a0] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+ DEBUG [7bf1f6a0] Finished in 1.698 seconds with exit status 1 (failed).
+  WARN rbenv: 3.0.1 is not installed or not found in $HOME/.rbenv/versions/3.0.1 on 178.62.241.126
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-06 18:38:55 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e10019e2] Running [ -d $HOME/.rbenv/versions/2.6.6 ] as deploy@178.62.241.126
+ DEBUG [e10019e2] Command: [ -d $HOME/./versions/2.6.6 ]
+ DEBUG [e10019e2] Finished in 1.550 seconds with exit status 1 (failed).
+  WARN rbenv: 2.6.6 is not installed or not found in $HOME/.rbenv/versions/2.6.6 on 178.62.241.126
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-06 18:41:58 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [1f31734d] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [1f31734d] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [1f31734d] Finished in 1.916 seconds with exit status 0 (successful).
+ DEBUG [ddbeada1] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [ddbeada1] Command: /usr/bin/env which passenger
+ DEBUG [ddbeada1] 	/usr/bin/passenger
+ DEBUG [ddbeada1] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [de741582] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [de741582] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [de741582] Finished in 0.203 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-5686eb7f7c98c5fbab58.sh 0.0%
+  INFO Uploading /tmp/git-ssh-5686eb7f7c98c5fbab58.sh 100.0%
+  INFO [a12ab302] Running /usr/bin/env chmod 700 /tmp/git-ssh-5686eb7f7c98c5fbab58.sh as deploy@178.62.241.126
+ DEBUG [a12ab302] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-5686eb7f7c98c5fbab58.sh )
+  INFO [a12ab302] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [c7611379] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [c7611379] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5686eb7f7c98c5fbab58.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [c7611379] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [c7611379] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
