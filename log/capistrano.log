@@ -73,3 +73,253 @@
 
 Please make sure you have the correct access rights
 and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 12:37:51 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8ce588d4] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [8ce588d4] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [8ce588d4] Finished in 1.474 seconds with exit status 0 (successful).
+ DEBUG [9a94a533] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [9a94a533] Command: /usr/bin/env which passenger
+ DEBUG [9a94a533] 	/usr/bin/passenger
+ DEBUG [9a94a533] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [bde55212] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [bde55212] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [bde55212] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-d1ea1e68955246b7d933.sh 0.0%
+  INFO Uploading /tmp/git-ssh-d1ea1e68955246b7d933.sh 100.0%
+  INFO [1033681b] Running /usr/bin/env chmod 700 /tmp/git-ssh-d1ea1e68955246b7d933.sh as deploy@178.62.241.126
+ DEBUG [1033681b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-d1ea1e68955246b7d933.sh )
+  INFO [1033681b] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [f98f3dab] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [f98f3dab] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d1ea1e68955246b7d933.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [f98f3dab] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [f98f3dab] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 12:43:39 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [61000b62] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [61000b62] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [61000b62] Finished in 1.252 seconds with exit status 0 (successful).
+ DEBUG [5703d9f8] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [5703d9f8] Command: /usr/bin/env which passenger
+ DEBUG [5703d9f8] 	/usr/bin/passenger
+ DEBUG [5703d9f8] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [caa19ee7] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [caa19ee7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [caa19ee7] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-7a266065e2f622d3680e.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7a266065e2f622d3680e.sh 100.0%
+  INFO [a5732927] Running /usr/bin/env chmod 700 /tmp/git-ssh-7a266065e2f622d3680e.sh as deploy@178.62.241.126
+ DEBUG [a5732927] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-7a266065e2f622d3680e.sh )
+  INFO [a5732927] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [806f6c73] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [806f6c73] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7a266065e2f622d3680e.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [806f6c73] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [806f6c73] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 12:52:45 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [6bcc7e45] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [6bcc7e45] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [6bcc7e45] Finished in 1.215 seconds with exit status 0 (successful).
+ DEBUG [db9677c3] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [db9677c3] Command: /usr/bin/env which passenger
+ DEBUG [db9677c3] 	/usr/bin/passenger
+ DEBUG [db9677c3] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [96f69e23] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [96f69e23] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [96f69e23] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2dabe936ee3634d30722.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2dabe936ee3634d30722.sh 100.0%
+  INFO [16e10582] Running /usr/bin/env chmod 700 /tmp/git-ssh-2dabe936ee3634d30722.sh as deploy@178.62.241.126
+ DEBUG [16e10582] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-2dabe936ee3634d30722.sh )
+  INFO [16e10582] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [9a638509] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [9a638509] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2dabe936ee3634d30722.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [9a638509] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [9a638509] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 13:00:03 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [62d51899] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [62d51899] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [62d51899] Finished in 1.540 seconds with exit status 0 (successful).
+ DEBUG [a14ad418] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [a14ad418] Command: /usr/bin/env which passenger
+ DEBUG [a14ad418] 	/usr/bin/passenger
+ DEBUG [a14ad418] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [73c9b31b] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [73c9b31b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [73c9b31b] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-de9d7c9546e067c3552b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-de9d7c9546e067c3552b.sh 100.0%
+  INFO [663717ae] Running /usr/bin/env chmod 700 /tmp/git-ssh-de9d7c9546e067c3552b.sh as deploy@178.62.241.126
+ DEBUG [663717ae] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-de9d7c9546e067c3552b.sh )
+  INFO [663717ae] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [86d9885b] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [86d9885b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-de9d7c9546e067c3552b.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [86d9885b] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [86d9885b] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 13:06:52 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [7cd8878b] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [7cd8878b] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [7cd8878b] Finished in 1.115 seconds with exit status 0 (successful).
+ DEBUG [a3c4db1f] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [a3c4db1f] Command: /usr/bin/env which passenger
+ DEBUG [a3c4db1f] 	/usr/bin/passenger
+ DEBUG [a3c4db1f] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [8c7f2eae] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [8c7f2eae] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [8c7f2eae] Finished in 0.114 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-c776213e5c72727177ef.sh 0.0%
+  INFO Uploading /tmp/git-ssh-c776213e5c72727177ef.sh 100.0%
+  INFO [a4fbabec] Running /usr/bin/env chmod 700 /tmp/git-ssh-c776213e5c72727177ef.sh as deploy@178.62.241.126
+ DEBUG [a4fbabec] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-c776213e5c72727177ef.sh )
+  INFO [a4fbabec] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [2a8af9eb] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [2a8af9eb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c776213e5c72727177ef.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [2a8af9eb] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [2a8af9eb] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 13:20:27 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3613fbb9] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [3613fbb9] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [3613fbb9] Finished in 1.533 seconds with exit status 0 (successful).
+ DEBUG [d834d643] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [d834d643] Command: /usr/bin/env which passenger
+ DEBUG [d834d643] 	/usr/bin/passenger
+ DEBUG [d834d643] Finished in 0.112 seconds with exit status 0 (successful).
+  INFO [6d0dd320] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [6d0dd320] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [6d0dd320] Finished in 0.753 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-45007907742dd217f68f.sh 0.0%
+  INFO Uploading /tmp/git-ssh-45007907742dd217f68f.sh 100.0%
+  INFO [8f9eacd1] Running /usr/bin/env chmod 700 /tmp/git-ssh-45007907742dd217f68f.sh as deploy@178.62.241.126
+ DEBUG [8f9eacd1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-45007907742dd217f68f.sh )
+  INFO [8f9eacd1] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [6d44e986] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [6d44e986] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-45007907742dd217f68f.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [6d44e986] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [6d44e986] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 13:28:51 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ae616e95] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [ae616e95] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [ae616e95] Finished in 1.012 seconds with exit status 0 (successful).
+ DEBUG [fd05a285] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [fd05a285] Command: /usr/bin/env which passenger
+ DEBUG [fd05a285] 	/usr/bin/passenger
+ DEBUG [fd05a285] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [05ac3d46] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [05ac3d46] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [05ac3d46] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-052bc4798ad2a34ce1ee.sh 0.0%
+  INFO Uploading /tmp/git-ssh-052bc4798ad2a34ce1ee.sh 100.0%
+  INFO [21bb140a] Running /usr/bin/env chmod 700 /tmp/git-ssh-052bc4798ad2a34ce1ee.sh as deploy@178.62.241.126
+ DEBUG [21bb140a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-052bc4798ad2a34ce1ee.sh )
+  INFO [21bb140a] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [1ca893b3] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [1ca893b3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-052bc4798ad2a34ce1ee.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [1ca893b3] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [1ca893b3] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 13:38:04 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [9f892703] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [9f892703] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [9f892703] Finished in 1.096 seconds with exit status 0 (successful).
+ DEBUG [981d70aa] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [981d70aa] Command: /usr/bin/env which passenger
+ DEBUG [981d70aa] 	/usr/bin/passenger
+ DEBUG [981d70aa] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [6a44c761] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [6a44c761] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [6a44c761] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-1b0aeccf263f187dcee3.sh 0.0%
+  INFO Uploading /tmp/git-ssh-1b0aeccf263f187dcee3.sh 100.0%
+  INFO [bb58143d] Running /usr/bin/env chmod 700 /tmp/git-ssh-1b0aeccf263f187dcee3.sh as deploy@178.62.241.126
+ DEBUG [bb58143d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-1b0aeccf263f187dcee3.sh )
+  INFO [bb58143d] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [83630fec] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [83630fec] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1b0aeccf263f187dcee3.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [83630fec] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [83630fec] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 13:42:59 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3f071c97] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [3f071c97] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [3f071c97] Finished in 3.825 seconds with exit status 0 (successful).
+ DEBUG [9c7854f2] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [9c7854f2] Command: /usr/bin/env which passenger
+ DEBUG [9c7854f2] 	/usr/bin/passenger
+ DEBUG [9c7854f2] Finished in 0.475 seconds with exit status 0 (successful).
+  INFO [fdfc2233] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [fdfc2233] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [fdfc2233] Finished in 0.558 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-495462192ad8aa174282.sh 0.0%
+  INFO Uploading /tmp/git-ssh-495462192ad8aa174282.sh 100.0%
+  INFO [8b587440] Running /usr/bin/env chmod 700 /tmp/git-ssh-495462192ad8aa174282.sh as deploy@178.62.241.126
+ DEBUG [8b587440] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-495462192ad8aa174282.sh )
+  INFO [8b587440] Finished in 0.491 seconds with exit status 0 (successful).
+  INFO [c9549daf] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [c9549daf] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-495462192ad8aa174282.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [c9549daf] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [c9549daf] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-07 13:48:12 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [aca55a39] Running [ -d $HOME/.rbenv/versions/2.7.0 ] as deploy@178.62.241.126
+ DEBUG [aca55a39] Command: [ -d $HOME/.rbenv/versions/2.7.0 ]
+ DEBUG [aca55a39] Finished in 1.011 seconds with exit status 0 (successful).
+ DEBUG [0c40b247] Running /usr/bin/env which passenger as deploy@178.62.241.126
+ DEBUG [0c40b247] Command: /usr/bin/env which passenger
+ DEBUG [0c40b247] 	/usr/bin/passenger
+ DEBUG [0c40b247] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [f052b9c0] Running /usr/bin/env mkdir -p /tmp as deploy@178.62.241.126
+ DEBUG [f052b9c0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [f052b9c0] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2203f9f3fd462a5c966f.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2203f9f3fd462a5c966f.sh 100.0%
+  INFO [5c8af8e5] Running /usr/bin/env chmod 700 /tmp/git-ssh-2203f9f3fd462a5c966f.sh as deploy@178.62.241.126
+ DEBUG [5c8af8e5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-2203f9f3fd462a5c966f.sh )
+  INFO [5c8af8e5] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [ed87722a] Running /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD as deploy@178.62.241.126
+ DEBUG [ed87722a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2203f9f3fd462a5c966f.sh" ; /usr/bin/env git ls-remote git@example.com:me/caipora_v1.git HEAD )
+ DEBUG [ed87722a] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [ed87722a] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
