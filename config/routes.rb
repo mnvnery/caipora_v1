@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  mount ForestLiana::Engine => '/forest'
   mount StripeEvent::Engine, at: '/stripe-webhooks'
   devise_for :users
   root to: 'pages#home'
