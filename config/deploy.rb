@@ -2,7 +2,7 @@
 lock "~> 3.16.0"
 
 set :application, "caipora_nores"
-set :repo_url, "git@example.com:me/caipora_v1.git"
+set :repo_url, "git@github.com:mnvnery/caipora_v1.git"
 set :branch, :master
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
